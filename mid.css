@@ -1,0 +1,136 @@
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    background-color: #CA9B6D;
+    border: 1px solid #ccc;
+}
+.content {
+    background-color: #dcd6d6;
+    padding: 10px;
+    border: 1px solid #a6aaacfa;
+    margin-top: 10px;
+}
+.pl{
+    display: grid; 
+    grid-template-columns: auto 1fr; 
+    gap: 10px; 
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color:#cec89e;
+    
+}
+.image{
+    max-width: 800px;
+    max-height: 800px; 
+    margin-left: 20px; 
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+img{
+    height:175px;
+    width: 175px;
+}
+.about{
+    border: 1px solid #ccc;
+    background-color: #CA9B6D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 8px;
+    
+}
+.papers-section {
+    border: 1px solid #ccc;
+    gap: 20px;
+    background-color: #cec89e;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 20px;
+}
+.papers{
+    border: 1px solid #ccc;
+    display: center;
+    background-color: #CA9B6D;
+    padding: 10px;
+    flex: 1 1 200px  
+}
+.box {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-top: 20px;
+    background-color:#cec89e;
+}
+.B1{
+    background-color: #CA9B6D; 
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-top: 20px;
+}
+.blog-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color:#cec89e;
+}
+.blog{
+    background-color: #CA9B6D; 
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-top: 20px;
+}
+.pictures-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background-color:#cec89e;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap:10px;
+}
+.famous-pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    /*width: 50%;
+    height: 200px;*/
+    gap:10px;
+    flex-wrap: wrap;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+body {      /*Background color*/
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color:#a8a6a2;
+}
+@media only screen and (max-width: 900px){
+    .container{
+        grid-template-columns: auto;
+        grid-template-rows:auto;
+
+        grid-template-areas:
+        "nav"
+        "main"
+        "About"
+        "Papers"
+        "Blog"
+        "Hobbies"
+        "famous-images";
+
+    }
+}
+
